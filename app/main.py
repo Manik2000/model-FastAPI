@@ -6,8 +6,8 @@ from joblib import load
 
 app = FastAPI(title='Churn Prediction')
 
-model = load('/model/churn.joblib')
-transformer = load('/model/transformer.joblib')
+model = load('../model/churn.joblib')
+transformer = load('../model/transformer.joblib')
 
 
 class InputData(BaseModel):
